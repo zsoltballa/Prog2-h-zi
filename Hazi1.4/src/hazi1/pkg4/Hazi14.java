@@ -16,6 +16,12 @@ public class Hazi14 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Ital i1=new Ital("Fanta","nagy");
+        Ital i2=new Ital("Coca Cola","nagy");
+        if(i1.equals(i2))
+            System.out.println("Ugyanazok");
+        else
+            System.out.println("Nem ugyanazok");
     }
     
 }

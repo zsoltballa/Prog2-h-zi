@@ -6,6 +6,7 @@
 package hazi1.pkg4;
 
 import java.util.Date;
+import java.util.Objects;
 
 /**
  *
@@ -54,4 +55,15 @@ public class Ital {
         return this.ár/320;
     }
     
+    @Override
+    public boolean equals(Object obj) {
+        
+        if (obj == null || !(obj instanceof Ital)) {
+            return false;
+        }
+        
+        Ital i=(Ital)obj;
+        
+        return this.getKiszerelés().equals(i.getKiszerelés()) && this.getNév().equals(i.getNév()) && this.getÁr()==i.getÁr();
+    }   
 }
